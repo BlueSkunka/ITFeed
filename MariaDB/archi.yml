@@ -1,0 +1,41 @@
+PHP:
+  - title
+  - link
+  - pubDate
+  - author
+  - content
+  - contentSnippet
+  - id
+  - isoDate
+
+Javascript:
+  - title
+  - link
+  - pubDate
+  - author
+  - content
+  - contentSnippet
+  - id
+  - isoDate
+
+Angular:
+  - creator
+  - title
+  - link
+  - pubDate
+  - content:encoded
+  - content:encodedSnippet
+  - dc:creator
+  - guid
+  - categories
+  - isoDate
+
+Bootstrap:
+  - title
+  - link
+  - pubDate
+  - author
+  - content
+  - contentSnippet
+  - id
+  - isoDate

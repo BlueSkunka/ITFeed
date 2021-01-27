@@ -1,0 +1,24 @@
+services:
+  mariadb:
+    container_name: mariadb
+    image: mariadb
+    build:
+      context: ./MariaDB/
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    restart: on-failure
+    volumes:
+      - ./MariaDB/:/it_rss_feed/
+    ports:
+      - "3306:3306"
+
+  nodejs:
+    container_name: nodejs
+    image: node
+    build:
+      context: ./NodeJS/
+    command: nodemon --watch models --watch routes --watch api.js -e js,html api.js
+    volumes:
+      - ./NodeJS/:/usr/src/api/
+    ports:
+      - "8080:8080"

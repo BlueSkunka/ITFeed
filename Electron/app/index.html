@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Police"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>IT Rss Feed</title>
+  </head>
+  <body>
+    <div id="app-container">
+      <!-- MENU -->
+      <div id="menu" class="ui secondary vertical pointing menu">
+        <div id="menu-param-btn">
+          <img
+            class="ui middle aligned avatar image"
+            src="./../../ressources/default-user.png"
+          />
+          <span>UserName</span>
+        </div>
+        <div id="menu-item"></div>
+      </div>
+
+      <!-- RSS FEED -->
+      <div id="feed"></div>
+    </div>
+
+    <script>
+      const jQuery = require("jquery");
+      const $ = jQuery;
+      const api = "http://localhost:8080";
+    </script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="javascript/app.js"></script>
+  </body>
+</html>

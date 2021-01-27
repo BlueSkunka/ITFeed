@@ -1,0 +1,19 @@
+{
+  "name": "it-rss-feed-api",
+  "version": "0.1.1",
+  "description": "Api for It Rss Feed",
+  "author": "Skunka <skunkaproduction@gmail.com>",
+  "main": "api.js",
+  "scripts": {
+    "start": "nodemon --watch ./ api.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mariadb": "^2.5.2",
+    "rss-parser": "^3.10.0",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
